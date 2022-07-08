@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "891419652982",
+    "project_id": "lab-08-danp",
+    "storage_bucket": "lab-08-danp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891419652982:android:0a221717305ce1f5298057",
+        "android_client_info": {
+          "package_name": "danp.lab08.firebasecloudmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891419652982-b5vumv0bm3j2bv6kgo1hv090p4uvtecs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM0XZH_1k02Ho3J_GLw7xrV-d4atZWgAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891419652982-b5vumv0bm3j2bv6kgo1hv090p4uvtecs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
