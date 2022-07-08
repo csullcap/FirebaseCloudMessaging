@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
@@ -29,9 +30,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        val noti : EditText = findViewById(R.id.response_notification)
-        intent.extras?.getString("hora")?.let { Log.d(TAG, it) }
-        noti.setText("PERU")
+        val noti : TextView = findViewById(R.id.response_notification)
+        intent.extras?.getString("event")?.let {
+            noti.setText(intent.extras?.getString("event"))
+        }
+
     }
 
 }

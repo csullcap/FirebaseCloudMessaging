@@ -28,14 +28,14 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         remoteView.setTextViewText(R.id.message,message)
 
         val intent_HoraPeru = Intent(this, MainActivity::class.java).apply {
-            putExtra("hora","Peru")
+            putExtra("event","Se actualizo el activity (main Activity)")
             addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
         }
 
         val pending_Peru = PendingIntent.getActivity(this,0,intent_HoraPeru,PendingIntent.FLAG_UPDATE_CURRENT)
 
-        val intent_HoraChina = Intent(this,RelojAparte::class.java).apply {
-            putExtra("hora","China")
+        val intent_HoraChina = Intent(this,AparteActivity::class.java).apply {
+            putExtra("event","Se abrio otro activity (AparteActivity )")
             addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
         }
         val pending_China = PendingIntent.getActivity(this,0,intent_HoraChina,PendingIntent.FLAG_UPDATE_CURRENT)

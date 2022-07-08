@@ -1,24 +1,20 @@
 package danp.lab08.firebasecloudmessaging
 
-import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.EditText
+import android.widget.TextView
 
-class RelojAparte : AppCompatActivity() {
+class AparteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reloj_aparte)
-        val noti : EditText = findViewById(R.id.response_notification)
-
-        if (intent.getExtras() != null) {
-            intent.extras?.getString("hora")?.let { Log.d(ContentValues.TAG, it) }
-            noti.setText("PERU")
+        val noti : TextView = findViewById(R.id.response_notification)
+        intent.extras?.getString("event")?.let {
+            noti.setText(intent.extras?.getString("event"))
         }
-
     }
+
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
     }

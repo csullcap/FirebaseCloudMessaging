@@ -46,21 +46,21 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.33"
+        android:layout_weight="0.53"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="80dp"
+            android:layout_width="120dp"
             android:layout_height="30dp"
-            android:text="Hora Peru"
+            android:text="Actualizar activity"
             android:textSize="7sp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="80dp"
+            android:layout_width="120dp"
             android:layout_height="30dp"
-            android:text="Hora China"
+            android:text="Abrir otro activiry"
             android:textSize="7sp"
             />
     </LinearLayout>
